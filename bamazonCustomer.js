@@ -1,8 +1,7 @@
+require('dotenv').config()
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-//var keys = require('./keys');
-//console.log("Checking for password");
-//console.log(keys.password);
+var keys = require('./keys');
 var connection = mysql.createConnection({
     host: "localhost",
   
@@ -13,7 +12,7 @@ var connection = mysql.createConnection({
     user: "root",
   
     // Your password, will have to delete later
-    password: "6olpui9Q!!",
+    password: keys.password.password,
     database: "bamazon"
   });
 
