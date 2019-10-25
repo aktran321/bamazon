@@ -1,8 +1,8 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 //var keys = require('./keys');
-//console.log("YOYOOYO");
-//console.log(keys.password.password);
+//console.log("Checking for password");
+//console.log(keys.password);
 var connection = mysql.createConnection({
     host: "localhost",
   
